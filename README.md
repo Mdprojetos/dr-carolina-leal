@@ -61,7 +61,7 @@ Todos estão marcados no código com `<!-- TROCAR -->` ou `<!-- CONFIRMAR -->`.
 - [x] **Nome oficial:** "Dra. Carolina Leal · Odontologia Especializada", conforme o letreiro da fachada. (O repositório ainda se chama "dr-patricia-moreira".)
 - [ ] **CRO** da responsável técnica, no rodapé (exigência do CFO para publicidade odontológica).
 - [ ] **Foto da clínica** (seção "A clínica"): hoje é um placeholder do Unsplash (`photo-1704455306251`).
-- [ ] **Imagem de compartilhamento (og:image)**, 1200×630: hoje é um placeholder do Unsplash.
+- [x] **Imagem de compartilhamento (og:image):** `assets/og-image.jpg` (1200×630), recorte da foto da fachada.
 - [ ] **Domínio próprio:** hoje `canonical`, `og:url` e JSON-LD apontam para `dr-carolina-leal.vercel.app`. Trocar se a clínica registrar um domínio.
 - [ ] **Lista de tratamentos** oferecidos.
 - [ ] **Autora do 1º depoimento** (hoje aparece como "Paciente da clínica").
