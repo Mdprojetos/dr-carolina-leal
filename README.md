@@ -62,7 +62,7 @@ Todos estão marcados no código com `<!-- TROCAR -->` ou `<!-- CONFIRMAR -->`.
 - [ ] **CRO** da responsável técnica, no rodapé (exigência do CFO para publicidade odontológica).
 - [ ] **Foto da clínica** (seção "A clínica"): hoje é um placeholder do Unsplash (`photo-1704455306251`).
 - [ ] **Imagem de compartilhamento (og:image)**, 1200×630: hoje é um placeholder do Unsplash.
-- [ ] **Domínio** em `canonical`, `og:url` e JSON-LD (hoje `clinicadracarolinaleal.com.br`).
+- [ ] **Domínio próprio:** hoje `canonical`, `og:url` e JSON-LD apontam para `dr-carolina-leal.vercel.app`. Trocar se a clínica registrar um domínio.
 - [ ] **Lista de tratamentos** oferecidos.
 - [ ] **Autora do 1º depoimento** (hoje aparece como "Paciente da clínica").
 - [x] **Fachada 3D:** remodelada a partir da foto real (`assets/fachada.webp`): letreiro azul, marquise metálica, vitrine com pilares azuis, portão de enrolar e sobrado. Ajustes em `buildFacade()` (`js/tooth-scene.js`). A foto também aparece na versão sem animação.

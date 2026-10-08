@@ -363,9 +363,20 @@
       var half0W = tanV * aspect * d0;
       view.cam0 = new THREE.Vector3(0, 0.15, d0);
       view.look0 = new THREE.Vector3(0, 0, 0);
-      view.home = portrait
-        ? { x: 0, y: tanV * d0 * 0.52, s: 0.55 }
-        : { x: Math.min(half0W * 0.45, 2.4), y: 0.05, s: 1 };
+      if (portrait) {
+        // Encaixa o dente no espaço livre entre o cabeçalho e o texto de abertura
+        var unit = (2 * tanV * d0) / h; // unidades da cena por pixel no plano do dente
+        var headerBox = document.querySelector('[data-header]');
+        var beatBox = document.querySelector('[data-beat="0"]');
+        var canvasTop = canvas.getBoundingClientRect().top;
+        var topPx = (headerBox ? headerBox.offsetHeight : 64) + 8;
+        var bottomPx = beatBox ? beatBox.getBoundingClientRect().top - canvasTop - 8 : h * 0.45;
+        var availPx = Math.max(bottomPx - topPx, h * 0.18);
+        var s = Math.min(0.75, (availPx * unit * 0.82) / 2.85);
+        view.home = { x: 0, y: (h / 2 - (topPx + bottomPx) / 2) * unit, s: s };
+      } else {
+        view.home = { x: Math.min(half0W * 0.45, 2.4), y: 0.05, s: 1 };
+      }
 
       // Final: fachada inteira
       var W = portrait ? 8.6 : 10.8;
