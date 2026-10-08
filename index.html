@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Clínica Dra. Carolina Leal · Dentista no Guará II, Brasília</title>
+  <meta name="description" content="Odontologia acolhedora no Guará II, Brasília-DF. Clareamento, implantes, ortodontia, restaurações e tratamento de canal com a Dra. Carolina Leal. Agende pelo WhatsApp (61) 99515-8616.">
+  <meta name="theme-color" content="#123A8F">
+  <!-- TROCAR: domínio definitivo -->
+  <link rel="canonical" href="https://www.clinicadracarolinaleal.com.br/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Clínica Dra. Carolina Leal">
+  <meta property="og:title" content="Clínica Dra. Carolina Leal · Dentista no Guará II">
+  <meta property="og:description" content="Odontologia acolhedora no Guará II, Brasília-DF. Agende sua avaliação pelo WhatsApp.">
+  <meta property="og:url" content="https://www.clinicadracarolinaleal.com.br/">
+  <!-- TROCAR: imagem OG própria (1200×630) -->
+  <meta property="og:image" content="https://images.unsplash.com/photo-1704455306251-b4634215d98f?w=1200&h=630&fit=crop&q=80">
+  <meta property="og:image:alt" content="Consultório odontológico claro e organizado">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="site.webmanifest">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.min.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+      }
+    }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Dentist",
+    "name": "Clínica Dra. Carolina Leal",
+    "url": "https://www.clinicadracarolinaleal.com.br/",
+    "telephone": "+55-61-99515-8616",
+    "email": "doutoracarolinaleal@gmail.com",
+    "image": "https://images.unsplash.com/photo-1704455306251-b4634215d98f?w=1200&h=630&fit=crop&q=80",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "QE 40, Conjunto H, Lote 11, Loja 4",
+      "addressLocality": "Guará II, Brasília",
+      "addressRegion": "DF",
+      "postalCode": "71070-082",
+      "addressCountry": "BR"
+    },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "18:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "08:00", "closes": "12:00" }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="site-header" data-header>
+    <div class="container site-header__inner">
+      <a class="brand" href="#inicio" aria-label="Clínica Dra. Carolina Leal, início">
+        <svg class="brand__mark" viewBox="0 0 200 240" aria-hidden="true"><use href="#tooth-shape"/></svg>
+        <span class="brand__text">
+          <span class="brand__name">Dra. Carolina Leal</span>
+          <span class="brand__tag">Odontologia</span>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu-principal" data-nav-toggle>
+        <span class="nav-toggle__bars" aria-hidden="true"></span>
+        <span class="visually-hidden">Abrir menu</span>
+      </button>
+
+      <nav class="site-nav" id="menu-principal" aria-label="Principal" data-nav>
+        <ul class="site-nav__list">
+          <li><a href="#tratamentos">Tratamentos</a></li>
+          <li><a href="#clinica">A clínica</a></li>
+          <li><a href="#depoimentos">Depoimentos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+        <a class="btn btn--primary site-nav__cta" href="https://wa.me/5561995158616?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta." target="_blank" rel="noopener">Agendar consulta</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <!-- Abertura em scroll: dente 3D → fachada da clínica -->
+    <section class="scrolly" id="inicio" aria-labelledby="hero-title" data-scrolly>
+      <div class="scrolly__sticky">
+        <canvas class="scrolly__canvas" aria-hidden="true" data-scene></canvas>
+
+        <div class="scrolly__fallback" aria-hidden="true">
+          <svg viewBox="0 0 200 240"><use href="#tooth-shape"/></svg>
+        </div>
+
+        <div class="scrolly__copy container">
+          <div class="beat beat--1" data-beat="0">
+            <h1 id="hero-title" class="display">Cuidado com o seu sorriso, <em>do primeiro detalhe ao último.</em></h1>
+            <p class="lead">Odontologia no Guará II, em Brasília. Atendimento sem pressa, explicado passo a passo, pensado também para quem tem medo de dentista.</p>
+            <div class="actions">
+              <a class="btn btn--primary" href="https://wa.me/5561995158616?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta." target="_blank" rel="noopener">Agendar pelo WhatsApp</a>
+              <a class="btn btn--ghost" href="#tratamentos">Ver tratamentos</a>
+            </div>
+          </div>
+
+          <div class="beat beat--2" data-beat="1">
+            <p class="display display--sm">Cada dente é único. <em>Cada plano de tratamento também.</em></p>
+          </div>
+
+          <div class="beat beat--3" data-beat="2">
+            <figure class="facade-static">
+              <img src="assets/fachada.webp" width="765" height="1020" loading="lazy" decoding="async"
+                   alt="Fachada da clínica: letreiro azul “Dra. Carolina Leal, Odontologia Especializada” sobre a vitrine de vidro">
+            </figure>
+            <h2 class="display display--sm">Você chegou.</h2>
+            <p class="lead">QE 40, Conj. H, Lote 11, Loja 4, no Guará II. Seja bem-vinda, seja bem-vindo.</p>
+            <div class="actions">
+              <a class="btn btn--primary" href="https://www.google.com/maps/search/?api=1&query=QE+40+Conjunto+H+Lote+11+Loja+4+Guar%C3%A1+II+Bras%C3%ADlia+DF" target="_blank" rel="noopener">Como chegar</a>
+              <a class="btn btn--ghost" href="#contato">Horários e contato</a>
+            </div>
+          </div>
+        </div>
+
+        <p class="scroll-hint" aria-hidden="true" data-scroll-hint>Role para chegar à clínica</p>
+      </div>
+    </section>
+
+    <section class="section" id="tratamentos" aria-labelledby="tratamentos-title">
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow">Tratamentos</p>
+          <h2 id="tratamentos-title" class="title">Do check-up ao sorriso novo</h2>
+          <p class="section__intro">Cuidamos da saúde e da estética da sua boca com o mesmo cuidado. Na avaliação, conversamos sobre o que faz sentido para você.</p>
+        </header>
+
+        <!-- CONFIRMAR: lista de tratamentos oferecidos -->
+        <ol class="treatments">
+          <li class="treatment">
+            <h3 class="treatment__title">Prevenção e limpeza</h3>
+            <p>Consultas de rotina, profilaxia e orientação de higiene para manter dentes e gengivas saudáveis por mais tempo.</p>
+          </li>
+          <li class="treatment">
+            <h3 class="treatment__title">Clareamento dental</h3>
+            <p>Protocolos de consultório e caseiro supervisionado, com controle de sensibilidade e resultado natural.</p>
+          </li>
+          <li class="treatment">
+            <h3 class="treatment__title">Restaurações estéticas</h3>
+            <p>Resinas que devolvem forma e cor ao dente, com acabamento que se confunde com o esmalte natural.</p>
+          </li>
+          <li class="treatment">
+            <h3 class="treatment__title">Implantes dentários</h3>
+            <p>Reposição de dentes perdidos com planejamento cuidadoso, segurança e conforto para mastigar.</p>
+          </li>
+          <li class="treatment">
+            <h3 class="treatment__title">Ortodontia e alinhadores</h3>
+            <p>Aparelhos fixos e alinhadores transparentes para alinhar o sorriso e equilibrar a mordida.</p>
+          </li>
+          <li class="treatment">
+            <h3 class="treatment__title">Cirurgias e sisos</h3>
+            <p>Extrações, inclusive de sisos, com anestesia cuidadosa e acompanhamento de perto no pós-operatório.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section section--tinted" id="clinica" aria-labelledby="clinica-title">
+      <div class="container split">
+        <figure class="split__media">
+          <!-- TROCAR: foto real da clínica (placeholder Unsplash) -->
+          <img src="https://images.unsplash.com/photo-1704455306251-b4634215d98f?w=900&q=75&auto=format&fit=crop"
+               srcset="https://images.unsplash.com/photo-1704455306251-b4634215d98f?w=600&q=75&auto=format&fit=crop 600w,
+                       https://images.unsplash.com/photo-1704455306251-b4634215d98f?w=900&q=75&auto=format&fit=crop 900w,
+                       https://images.unsplash.com/photo-1704455306251-b4634215d98f?w=1300&q=75&auto=format&fit=crop 1300w"
+               sizes="(min-width: 1024px) 45vw, 100vw"
+               width="900" height="1100" loading="lazy" decoding="async"
+               alt="Consultório odontológico claro, com cadeira e bancada organizadas"
+               data-placeholder>
+        </figure>
+
+        <div class="split__body">
+          <p class="eyebrow">A clínica</p>
+          <h2 id="clinica-title" class="title">Um consultório feito para você relaxar</h2>
+          <p class="section__intro">Muita gente chega aqui com medo de dentista e sai indicando para a família. Isso acontece porque o cuidado começa antes da cadeira.</p>
+
+          <ul class="perks">
+            <li class="perk">
+              <h3 class="perk__title">Conforto de verdade</h3>
+              <p>Cadeira com massagem e música ambiente para deixar o atendimento mais tranquilo.</p>
+            </li>
+            <li class="perk">
+              <h3 class="perk__title">Atendimento sem pressa</h3>
+              <p>Tempo para ouvir, examinar e explicar cada etapa antes de começar.</p>
+            </li>
+            <li class="perk">
+              <h3 class="perk__title">Mão leve</h3>
+              <p>Anestesia cuidadosa e técnica delicada, durante o procedimento e no pós-operatório.</p>
+            </li>
+            <li class="perk">
+              <h3 class="perk__title">Perto de você</h3>
+              <p>No comércio da QE 40, Guará II, com atendimento também aos sábados pela manhã.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="primeira-consulta" aria-labelledby="passos-title">
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow">Primeira consulta</p>
+          <h2 id="passos-title" class="title">Como funciona</h2>
+        </header>
+        <ol class="steps">
+          <li class="step">
+            <h3 class="step__title">Fale com a gente</h3>
+            <p>Mande uma mensagem no WhatsApp e escolha o melhor horário, inclusive sábado de manhã.</p>
+          </li>
+          <li class="step">
+            <h3 class="step__title">Avaliação completa</h3>
+            <p>Exame clínico detalhado e uma conversa sobre o que você deseja para o seu sorriso.</p>
+          </li>
+          <li class="step">
+            <h3 class="step__title">Plano claro</h3>
+            <p>Você conhece as opções, prazos e valores com transparência antes de decidir.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section section--dark" id="depoimentos" aria-labelledby="depoimentos-title">
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow eyebrow--light">Depoimentos</p>
+          <h2 id="depoimentos-title" class="title">Quem perdeu o medo conta</h2>
+        </header>
+
+        <ul class="quotes">
+          <li>
+            <figure class="quote">
+              <blockquote>
+                <p>Para quem tinha trauma de dentista, minha experiência foi maravilhosa. Com a Dra. Carolina eu perdi o medo: fiz procedimentos e não senti absolutamente nada, tanto durante quanto no pós-operatório. Super indico, mãos de fada.</p>
+              </blockquote>
+              <!-- CONFIRMAR: nome da autora deste depoimento -->
+              <figcaption><span class="quote__name">Paciente da clínica</span><span class="quote__src">Avaliação no Google</span></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure class="quote">
+              <blockquote>
+                <p>O atendimento da Dra. Carol é diferencial! Em especial a cadeira que faz massagem enquanto você é atendido e as músicas que te deixam mais tranquila. Eu não sou muito fã de dentista, mas da Carol eu sou.</p>
+              </blockquote>
+              <figcaption><span class="quote__name">Gabriely Florencio</span><span class="quote__src">Avaliação no Google</span></figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure class="quote">
+              <blockquote>
+                <p>Atendimento excelente, impecável! Desde o WhatsApp até a clínica. A Dra. Carolina explica tudo certinho e nos deixa bem à vontade. Arranquei os 4 sisos e foi bem tranquilo. Tudo perfeito!</p>
+              </blockquote>
+              <figcaption><span class="quote__name">Sara Gabriela Nascimento Souza</span><span class="quote__src">Avaliação no Google</span></figcaption>
+            </figure>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="contato" aria-labelledby="contato-title">
+      <div class="container split split--contact">
+        <div class="split__body">
+          <p class="eyebrow">Contato</p>
+          <h2 id="contato-title" class="title">Venha nos visitar</h2>
+
+          <address class="contact">
+            <p class="contact__item">
+              <span class="contact__label">Endereço</span>
+              QE 40, Conj. H, Lote 11, Loja 4<br>Guará II, Brasília-DF · CEP 71070-082
+            </p>
+            <p class="contact__item">
+              <span class="contact__label">Telefone e WhatsApp</span>
+              <a href="tel:+5561995158616">(61) 99515-8616</a>
+            </p>
+            <p class="contact__item">
+              <span class="contact__label">E-mail</span>
+              <a href="mailto:doutoracarolinaleal@gmail.com">doutoracarolinaleal@gmail.com</a>
+            </p>
+          </address>
+
+          <div class="hours">
+            <h3 class="hours__title">Horário de atendimento <span class="hours__status" data-open-status></span></h3>
+            <table class="hours__table">
+              <caption class="visually-hidden">Horários de funcionamento da clínica</caption>
+              <tbody>
+                <tr data-days="1,2,3,4,5"><th scope="row">Segunda a sexta</th><td>8h às 18h</td></tr>
+                <tr data-days="6"><th scope="row">Sábado</th><td>8h às 12h</td></tr>
+                <tr data-days="0"><th scope="row">Domingo</th><td>Fechado</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="actions">
+            <a class="btn btn--primary" href="https://wa.me/5561995158616?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta." target="_blank" rel="noopener">Agendar pelo WhatsApp</a>
+            <a class="btn btn--ghost" href="tel:+5561995158616">Ligar agora</a>
+          </div>
+        </div>
+
+        <div class="map">
+          <iframe title="Mapa: Clínica Dra. Carolina Leal, QE 40, Guará II"
+                  src="https://www.google.com/maps?q=QE+40+Conjunto+H+Lote+11+Guar%C3%A1+II+Bras%C3%ADlia+DF+71070-082&output=embed"
+                  loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <p class="site-footer__brand">Clínica Dra. Carolina Leal</p>
+      <!-- TROCAR: número do CRO da responsável técnica -->
+      <p>Responsável técnica: Dra. Carolina Leal · CRO-DF [inserir número]</p>
+      <p>© <span data-year>2026</span> · QE 40, Guará II, Brasília-DF</p>
+    </div>
+  </footer>
+
+  <a class="wa-float" href="https://wa.me/5561995158616?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta." target="_blank" rel="noopener" aria-label="Conversar pelo WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2Zm0 18.15c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 4.54 0 8.24 3.7 8.24 8.24 0 4.55-3.7 8.24-8.24 8.24Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.17.24-.64.8-.78.97-.14.17-.29.18-.54.06a6.7 6.7 0 0 1-3.38-2.95c-.26-.44.26-.41.73-1.36.08-.17.04-.31-.02-.43-.06-.13-.56-1.35-.77-1.84-.2-.48-.4-.42-.56-.42h-.48a.92.92 0 0 0-.66.31c-.23.25-.87.85-.87 2.07s.89 2.4 1.01 2.57c.12.17 1.75 2.67 4.24 3.74 1.57.68 2.19.74 2.98.62.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.14-1.18-.06-.11-.22-.17-.47-.29Z"/></svg>
+  </a>
+
+  <!-- Forma do dente reutilizada no logo e no fallback -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <linearGradient id="tooth-fill" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#FFFFFF"/>
+        <stop offset="1" stop-color="#DCE7F7"/>
+      </linearGradient>
+      <symbol id="tooth-shape" viewBox="0 0 200 240">
+        <path d="M46 92C30 60 44 26 74 28c12 1 18 8 26 8s14-7 26-8c30-2 44 32 28 64-6 14-8 28-8 48 0 36-8 74-22 76-14 2-14-30-18-50-2-10-10-10-12 0-4 20-4 52-18 50-14-2-22-40-22-76 0-20-2-34-8-48Z" fill="url(#tooth-fill)" stroke="#123A8F" stroke-width="7" stroke-linejoin="round"/>
+        <path d="M70 52c8-6 18-6 24 0" fill="none" stroke="#4D8FEF" stroke-width="6" stroke-linecap="round"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <script src="js/tooth-scene.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

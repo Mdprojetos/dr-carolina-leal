@@ -1,0 +1,12 @@
+{
+  "name": "Clínica Dra. Carolina Leal",
+  "short_name": "Dra. Carolina",
+  "lang": "pt-BR",
+  "start_url": "./",
+  "display": "browser",
+  "background_color": "#F2F5FA",
+  "theme_color": "#123A8F",
+  "icons": [
+    { "src": "assets/favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}
